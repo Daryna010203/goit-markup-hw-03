@@ -2,10 +2,75 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
+}
+
+.button {
   cursor: pointer;
 }
-ul {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-navigation {
+  display: flex;
+  column-gap: 76px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.address {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -22,22 +87,38 @@ a {
 .logo-part {
   color: #2e2f42;
 }
-.nav-link {
+
+.menu-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
+.menu-link:hover {
+  color: #404bbf;
+}
+
+.menu-link:active:nth-child(:first-child) {
+  text-decoration: underline;
+  color: #404bbf;
+}
+
 .address-link {
+  display: block;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -50,6 +131,11 @@ a {
 }
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -58,6 +144,10 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
 .button {
   font-weight: 500;
@@ -67,11 +157,27 @@ a {
   cursor: pointer;
   color: #fff;
   background-color: #4d5ae5;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
 }
 
 .button:hover,
 .button:focus {
   background-color: #404bbf;
+}
+
+.services-block-list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.services-block-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.services {
+  margin-bottom: 8px;
 }
 
 .block-title {
