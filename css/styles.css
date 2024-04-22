@@ -46,13 +46,12 @@ img {
 
 .page-navigation {
   display: flex;
-  column-gap: 76px;
   align-items: center;
 }
 
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .header-navigation {
@@ -66,7 +65,7 @@ img {
 
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
   align-items: center;
 }
 a {
@@ -81,6 +80,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 .logo-part {
   color: #2e2f42;
@@ -180,7 +180,7 @@ a {
 
 .services-block-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .services-block-item {
@@ -223,7 +223,7 @@ a {
 
 .team-block-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .team-block-card {
   width: calc((100% - 3 * 24px) / 4);
@@ -265,7 +265,7 @@ a {
 }
 
 .portfolio-text {
-  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .logo-part-footer {
@@ -280,14 +280,11 @@ a {
   background-color: #2e2f42;
 }
 
-.container-footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .footer-card {
   max-width: 264px;
+  padding: 100px 0;
 }
 .block-text-footer {
   margin-top: 16px;
+  max-width: 264px;
 }
