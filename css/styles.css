@@ -154,8 +154,10 @@ a {
   margin: 0 auto;
   padding: 16px 32px;
   border-radius: 4px;
-  border-color: #4d5ae5;
+  border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
 }
 
 .button:hover,
@@ -272,17 +274,12 @@ a {
 
 .footer .block-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 .footer {
   background-color: #2e2f42;
-}
-
-.footer-card {
   padding: 100px 0;
-}
-.block-text-footer {
-  max-width: 264px;
 }
 
 .logo-footer {
