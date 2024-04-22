@@ -4,10 +4,6 @@ body {
   background-color: #ffffff;
 }
 
-.button {
-  cursor: pointer;
-}
-
 h1,
 h2,
 h3,
@@ -29,6 +25,7 @@ ol {
 
 img {
   display: block;
+  background-size: cover;
 }
 
 .page-header {
@@ -74,6 +71,7 @@ img {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -106,11 +104,6 @@ a {
   color: #404bbf;
 }
 
-.menu-link:active:nth-child(:first-child) {
-  text-decoration: underline;
-  color: #404bbf;
-}
-
 .address-link {
   display: block;
   font-size: 16px;
@@ -133,7 +126,7 @@ a {
   background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
-  max-width: 1440px;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -160,11 +153,29 @@ a {
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
+  border-radius: 4px;
+  border-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
 .button:focus {
   background-color: #404bbf;
+  border-color: #404bbf;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .services-block-list {
@@ -206,15 +217,77 @@ a {
   text-align: center;
 }
 
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-block-list {
+  display: flex;
+  column-gap: 24px;
+}
+.team-block-card {
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background-color: #fff;
+}
+
+.discription {
+  margin: 32px 16px;
+}
+
+.team-subtitle {
+  margin-bottom: 8px;
+}
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  max-width: calc((100% - 2 * 24px) / 3);
+}
+.portfolio-card {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+}
+
+.portfolio-text {
+  margin-top: 8px;
+}
+
 .logo-part-footer {
   color: #f4f4fd;
 }
-.footer {
-  background-color: #2e2f42;
-}
+
 .footer .block-text {
   color: #f4f4fd;
 }
-.team-block-card {
-  background-color: #fff;
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.container-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-card {
+  max-width: 264px;
+}
+.block-text-footer {
+  margin-top: 16px;
 }

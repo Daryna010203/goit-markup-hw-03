@@ -68,7 +68,7 @@
 
       <section class="services-block section">
         <div class="container">
-          <h2 class="block-title">Services</h2>
+          <h2 class="block-title visually-hidden">Services</h2>
           <ul class="services-block-list">
             <li class="services-block-item">
               <h3 class="block-subtitle services">Strategy</h3>
@@ -109,7 +109,7 @@
 
       <section class="team-block section">
         <div class="container">
-          <h2 class="block-title">Our Team</h2>
+          <h2 class="block-title team-title">Our Team</h2>
 
           <ul class="team-block-list">
             <li class="team-block-card">
@@ -118,8 +118,10 @@
                 alt="Mark Guerrero"
                 width="264"
               />
-              <h3 class="block-subtitle">Mark Guerrero</h3>
-              <p class="block-text">Product Designer</p>
+              <div class="discription">
+                <h3 class="block-subtitle team-subtitle">Mark Guerrero</h3>
+                <p class="block-text">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-block-card">
@@ -128,8 +130,10 @@
                 alt="Tom Ford"
                 width="264"
               />
-              <h3 class="block-subtitle">Tom Ford</h3>
-              <p class="block-text">Frontend Developer</p>
+              <div class="discription">
+                <h3 class="block-subtitle team-subtitle">Tom Ford</h3>
+                <p class="block-text">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-block-card">
@@ -138,8 +142,10 @@
                 alt="Camila Garcia"
                 width="264"
               />
-              <h3 class="block-subtitle">Camila Garcia</h3>
-              <p class="block-text">Marketing</p>
+              <div class="discription">
+                <h3 class="block-subtitle team-subtitle">Camila Garcia</h3>
+                <p class="block-text">Marketing</p>
+              </div>
             </li>
 
             <li class="team-block-card">
@@ -148,8 +154,10 @@
                 alt="Daniel Wilson"
                 width="264"
               />
-              <h3 class="block-subtitle">Daniel Wilson</h3>
-              <p class="block-text">UI Designer</p>
+              <div class="discription">
+                <h3 class="block-subtitle team-subtitle">Daniel Wilson</h3>
+                <p class="block-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -159,7 +167,7 @@
 
       <section class="portfolio-block section">
         <div class="container">
-          <h2 class="block-title">Our Portfolio</h2>
+          <h2 class="block-title portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <img
@@ -168,8 +176,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Banking App</h3>
-              <p class="block-text">App</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Banking App</h3>
+                <p class="block-text portfolio-text">App</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -178,8 +188,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Cashless Payment</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Cashless Payment</h3>
+                <p class="block-text portfolio-text">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -188,8 +200,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Meditation App</h3>
-              <p class="block-text">App</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Meditation App</h3>
+                <p class="block-text portfolio-text">App</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -198,8 +212,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Taxi Service</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Taxi Service</h3>
+                <p class="block-text portfolio-text">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -208,8 +224,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Screen Illustrations</h3>
-              <p class="block-text">Design</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Screen Illustrations</h3>
+                <p class="block-text portfolio-text">Design</p>
+              </div>
             </li>
             <li class="portfolio-item">
               <img
@@ -218,8 +236,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="block-subtitle">Online Courses</h3>
-              <p class="block-text">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="block-subtitle">Online Courses</h3>
+                <p class="block-text portfolio-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -227,14 +247,16 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container container-footer">
+        <div class="footer-card">
         <a class="logo" href="./index.html"
           >Web<span class="logo-part-footer">Studio</span>
         </a>
-        <p class="block-text">
+        <p class="block-text block-text-footer">
           Increase the flow of customers and sales for your business with
           digital marketing &amp; growth solutions.
         </p>
+        </div>
       </div>
     </footer>
   </body>
